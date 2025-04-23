@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Day V-Taper Workout Plan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1A1A1A; /* Black */
+            color: #F4F4F4; /* Subtle white */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            background: #333; /* Dark grey */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+        }
+        .cover {
+            text-align: center;
+            padding: 40px 20px;
+            background: #1A1A1A; /* Black */
+            border-radius: 10px 10px 0 0;
+            border-bottom: 2px solid #555; /* Mid grey */
+        }
+        .cover img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .cover h1 {
+            font-size: 34px;
+            margin: 0;
+            color: #F4F4F4;
+        }
+        .cover p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #CCC; /* Light grey */
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #1A1A1A;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #F4F4F4;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #CCC;
+        }
+        h2 {
+            color: #555; /* Mid grey */
+            font-size: 24px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .cta {
+            background: #555; /* Mid grey */
+            color: #F4F4F4;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .cta a {
+            color: #F4F4F4;
+            font-weight: bold;
+			
+        }
+		.cta h2, .cta p {
+			color: #F4F4F4 !important;
+		}
+        .tracker table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .tracker th, .tracker td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: left;
+        }
+        .tracker th {
+            background: #1A1A1A;
+            color: #F4F4F4;
+        }
+        .tracker input {
+            width: 100%;
+            border: none;
+            padding: 5px;
+            background: #333;
+            color: #F4F4F4;
+        }
+        .testimonial {
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 3px solid #555;
+        }
+        @media print {
+            nav {
+                display: none; /* Hide nav in PDF */
+            }
+            .section {
+                display: block !important; /* Show all sections in PDF */
+            }
+            .cover {
+                page-break-after: always;
+            }
+            h2 {
+                page-break-before: always;
+            }
+        }
+        @media (max-width: 600px) {
+            .cover h1 {
+                font-size: 28px;
+            }
+            nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+		@page {
+			@bottom-center {
+			content: "Page " counter(page) " of " counter(pages);
+			font-size: 12px;
+			color: #CCC;
+			}
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cover Page -->
+        <div class="cover">
+            <a href="https://fitweebs.com" target="_blank" rel="noopener noreferrer"><img src="fitweebslogotransparentwhite.png" alt="fitweebslogo"></a>
+            <h1>4-Day V-Taper Workout Plan</h1>
+            <p>Your First Step to a Stronger, Leaner You</p>
+            <p>By Tyler B. (@tylerbtopg)</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#day1">Day 1</a>
+            <a href="#day2">Day 2</a>
+            <a href="#day3">Day 3</a>
+            <a href="#day4">Day 4</a>
+            <a href="#tracker">Tracker</a>
+            <a href="#library">Library</a>
+            <a href="#cta">Next Steps</a>
+        </nav>
+
+        <!-- Introduction -->
+        <div id="intro" class="section active">
+            <h2 onclick="toggleSection('intro')">Introduction</h2>
+            <p>Welcome to my 4-Day Push/Pull/Legs V-Taper Workout Plan! This is the exact system I’ve honed over a year to carve a V-Taper physique—broad shoulders, wide lats, and a tight waist. It’s half of my full 8-day program, designed to deliver results you can see and feel.</p>
+            <p>My clients, like @poopyfit, have transformed with this approach—check her out on Instagram for proof! This 4-day plan is a powerful start, repeatable and effective, but it’s just a glimpse of what’s possible. For the complete V-Taper blueprint, book a call with me.</p>
+            <p>Let’s hit the gym and start building your dream physique!</p>
+            <div class="testimonial">
+                <p>“Tyler’s V-Taper plan reshaped my body in weeks! His system works.” – @poopyfit</p>
+            </div>
+        </div>
+
+        <!-- Day 1: Push - Shoulder Focus -->
+        <div id="day1" class="section">
+            <h2 onclick="toggleSection('day1')">Day 1: Push - Shoulder Focus</h2>
+            <ul>
+                <li>Dumbbell Shoulder Press: 4 sets - 16, 12, 8, 16 reps</li>
+                <li>Butterfly Machine: 4 sets - 16, 12, 8, 16 reps <em>(Last set: static hold in stretched position for 1 sec + 3 partial reps)</em></li>
+                <li>Incline Dumbbell Bench Press: 3 sets - 16, 12, 8 reps</li>
+                <li>Heavy Lateral Raises: 2 sets - 16, 12 reps</li>
+                <li>Seated Dumbbell Triceps Extension: 2 sets - 16, 12 reps</li>
+                <li>Cable Triceps Pushdown: 4 sets - 16, 12, 8, 16 reps</li>
+                <li>One Arm Cable Lateral Raise: 3 sets - 16, 12, 8 reps</li>
+            </ul>
+        </div>
+
+        <!-- Day 2: Pull - Lat Focus -->
+        <div id="day2" class="section">
+            <h2 onclick="toggleSection('day2')">Day 2: Pull - Lat Focus</h2>
+            <ul>
+                <li>Lat Pulldown: 4 sets - 16, 12, 8, 16 reps</li>
+                <li>Seated Cable Rows: 3 sets - 16, 12, 8 reps</li>
+                <li>Cable Pull-Over: 4 sets - 16, 12, 8, 16 reps <em>(Last set: static hold in stretched position for 1 sec + 3 partial reps)</em></li>
+                <li>Alternating Dumbbell Hammer Curls: 2 sets - 16, 12 reps</li>
+                <li>Cable Reverse Fly: 3 sets - 16, 12, 8 reps</li>
+                <li>Alternating Incline Dumbbell Bicep Curls: 2 sets - 16, 12 reps</li>
+                <li>Preacher Curl Machine: 2 sets - 16, 12 reps</li>
+                <li>Hanging Leg Raises: 3 sets - Max reps</li>
+            </ul>
+        </div>
+
+        <!-- Day 3: Legs - Hamstring Focus -->
+        <div id="day3" class="section">
+            <h2 onclick="toggleSection('day3')">Day 3: Legs - Hamstring Focus</h2>
+            <ul>
+                <li>Leg Extensions: 4 sets - 16, 12, 8, 16 reps</li>
+                <li>Seated Leg Curl: 4 sets - 16, 12, 8, 16 reps <em>(Last set: static hold in stretched position for 1 sec + 3 partial reps)</em></li>
+                <li>Leg Press: 4 sets - 16, 12, 8, 16 reps</li>
+                <li>Smith Machine RDL: 2 sets - 16, 12 reps</li>
+                <li>Seated Calf Raise Machine: 3 sets - 16, 12, 8 reps</li>
+            </ul>
+        </div>
+
+        <!-- Day 4: Rest -->
+        <div id="day4" class="section">
+            <h2 onclick="toggleSection('day4')">Day 4: Rest</h2>
+            <p>Rest is non-negotiable for muscle growth and recovery. Take it easy on this day. You can do something like light stretching, yoga, or a walk. Your V-Taper is built in the gym, but it grows when you rest. If you become a client, we will work together to devise an optimal routine to ensure you are optimally using your rest day!</p>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div id="tracker" class="section tracker">
+            <h2 onclick="toggleSection('tracker')">Track Your Progress</h2>
+            <p>Log your workouts to stay motivated and monitor your gains. Fill this out each session! If you become a client, we will be tracking your workouts, and I will be guiding you to ensure you are on track. </p>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Exercise</th>
+                    <th>Weight</th>
+                    <th>Reps</th>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="MM/DD/YY"></td>
+                    <td><input type="text" placeholder="e.g., Dumbbell Press"></td>
+                    <td><input type="text" placeholder="e.g., 50 lbs"></td>
+                    <td><input type="text" placeholder="e.g., 12"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="MM/DD/YY"></td>
+                    <td><input type="text" placeholder="e.g., Lat Pulldown"></td>
+                    <td><input type="text" placeholder="e.g., 100 lbs"></td>
+                    <td><input type="text" placeholder="e.g., 16"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Exercise Library -->
+        <div id="library" class="section">
+            <h2 onclick="toggleSection('library')">Exercise Library</h2>
+            <p>For video demonstrations of these exercises, follow me on Instagram <a href="https://instagram.com/tylerbtopg target="_blank" rel="noopener noreferrer">@tylerbtopg</a> or check my YouTube channel <a href="[your YouTube link]">@tylerbtopg</a>. Master the form, maximize results, and train safely. If you become a client, you will get access to demonstrational videos via Trainerize.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div id="cta" class="section cta">
+            <h2 onclick="toggleSection('cta')">Next Steps</h2>
+            <p>Ready to unlock the full 8-day V-Taper Plan and get personalized coaching? Book a free call with me at <a href="https://calendly.com/tylerbrowndog/initial-client-coaching-onboarding" target="_blank" rel="noopener noreferrer">Book a call</a> and let’s build your dream physique together!</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (section.id === id) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                toggleSection(targetId);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.querySelector('#intro').classList.add('active');
+        });
+    </script>
+</body>
+<footer style="text-align: center; color: #CCC; font-size: 12px; margin-top: 20px;">
+    Tyler B. - @tylerbtopg | Book a free call at <a href="https://calendly.com/tylerbrowndog/initial-client-coaching-onboarding" target="_blank" rel="noopener noreferrer" style="color: #F4F4F4;">calendly.com/tylerbrowndog</a>
+</footer>
+</html>
