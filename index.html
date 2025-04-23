@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4-Day V-Taper Workout Plan</title>
+	<link rel="icon" type="image/png" href="fwfavico.png">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -41,24 +42,29 @@
             margin: 10px 0;
             color: #CCC; /* Light grey */
         }
-        nav {
-            position: sticky;
-            top: 0;
-            background: #1A1A1A;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 20px 0;
-            z-index: 100;
-        }
-        nav a {
-            color: #F4F4F4;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        nav a:hover {
-            color: #CCC;
-        }
+		nav {
+			position: sticky;
+			top: 0;
+			background: #1A1A1A;
+			padding: 10px;
+			border-radius: 5px;
+			margin: 20px 0;
+			z-index: 100;
+			display: flex; /* Added Flexbox */
+			flex-wrap: wrap; /* Allows items to wrap cleanly */
+			justify-content: center; /* Centers items */
+		}
+
+		nav a {
+			color: #F4F4F4;
+			margin: 0 10px; /* Adjusted margin */
+			text-decoration: none;
+			font-size: 14px; /* Adjusted font size */
+		}
+
+		nav a:hover {
+			color: #CCC;
+		}
         h2 {
             color: #555; /* Mid grey */
             font-size: 24px;
@@ -147,6 +153,10 @@
             .cover h1 {
                 font-size: 28px;
             }
+			nav {
+				flex-direction: column; /* Stack items vertically on small screens */
+				align-items: center;
+			}
             nav a {
                 font-size: 14px;
                 margin: 0 5px;
@@ -375,98 +385,98 @@
 
         <!-- Day 4: Rest -->
         <div id="day4" class="section">
-            <h2 onclick="toggleSection('day4')">Day 4: Rest</h2>
-            <p>Rest is non-negotiable for muscle growth and recovery. Take it easy on this day. You can do something like light stretching, yoga, or a walk. Your V-Taper is built in the gym, but it grows when you rest. If you become a client, we will work together to devise an optimal routine to ensure you are optimally using your rest day!</p>
-        </div>
+			<h2 onclick="toggleSection('day4')">Day 4: Rest</h2>
+			<p>Rest is crucial for muscle growth and recovery. On this day, focus on light activities like stretching or walking to aid recovery. Proper nutrition is also key—ensure you're getting enough protein and staying hydrated. For a more comprehensive rest day strategy and the full 8-day plan, book a call with me!</p>
+		</div>
 
         <!-- Progress Tracker -->
-        <div id="tracker" class="section tracker">
-            <h2 onclick="toggleSection('tracker')">Track Your Progress</h2>
-            <p>Log your workouts to stay motivated and monitor your gains. If you become a client, we will be tracking your workouts, and I will be guiding you to ensure you are on track.</p>
-            <p><strong>For printed use: Write your workout details in the spaces below.</strong></p>
-            <table>
-                <tr>
-                    <th>Date</th>
-                    <th>Exercise</th>
-                    <th>Weight</th>
-                    <th>Reps</th>
-                </tr>
-                <!-- Example row -->
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <!-- Add 10 blank rows for handwritten logging -->
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-
+		<div id="tracker" class="section tracker">
+			<h2 onclick="toggleSection('tracker')">Track Your Progress</h2>
+			<p>Tracking your workouts is essential for seeing progress and staying motivated. Log your exercises, weights, and reps to monitor your gains. If you want personalized guidance and a tailored tracking plan, book a call to learn more about my coaching services.</p>
+			<p><strong>For printed use: Write your workout details in the spaces below.</strong></p>
+			<table>
+				<tr>
+					<th>Date</th>
+					<th>Exercise</th>
+					<th>Weight</th>
+					<th>Reps</th>
+				</tr>
+				<!-- Example row -->
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<!-- Add 10 blank rows for handwritten logging -->
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
         <!-- Exercise Library -->
         <div id="library" class="section">
-            <h2 onclick="toggleSection('library')">Exercise Library</h2>
-            <p>For video demonstrations of these exercises, follow me on Instagram <a href="https://instagram.com/tylerbtopg" target="_blank" rel="noopener noreferrer">@tylerbtopg</a> or check my YouTube channel <a href="[your YouTube link]" target="_blank" rel="noopener noreferrer">@tylerbtopg</a>. Master the form, maximize results, and train safely. If you become a client, you will get access to demonstrational videos via Trainerize.</p>
-        </div>
+			<h2 onclick="toggleSection('library')">Exercise Library</h2>
+			<p>For video demonstrations of these exercises, follow me on Instagram <a href="https://instagram.com/tylerbtopg" target="_blank" rel="noopener noreferrer">@tylerbtopg</a> or check my YouTube channel <a href="https://www.youtube.com/@tylerbtopg" target="_blank" rel="noopener noreferrer">@tylerbtopg</a>. Master the form, maximize results, and train safely.</p>
+			<p>I occasionally switch exercises to keep things fresh. For example, you might try incline barbell presses instead of dumbbell presses. Feel free to adjust based on your equipment and preferences. For more tips and detailed exercise guides, become a client and get access to exclusive resources.</p>
+		</div>
 
         <!-- Call to Action -->
         <div id="cta" class="section cta">
